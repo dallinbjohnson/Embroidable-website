@@ -214,6 +214,9 @@ nav > ul > li > a:hover {
     float: right;
 }
 @media screen and (max-width: 940px) {
+    body {
+        margin: 0;
+    }
     nav ul {
         max-height: 0;
     }
