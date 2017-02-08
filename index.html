@@ -1,1 +1,100 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="EmbroideryStylesheet.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Menu Icon-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="UTF-8">
+    <title>Embroidable</title>
+</head>
+<body>
+    
+<a class="logo" href="Embroidery.html"><img src="embroidable.png" alt="Logo"></a>
+
+<!--Login button and screen-->
+<button class="login" onclick="document.getElementById('id01').style.display='block'" style="width:auto; float: right;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="action_page.php">
+  
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+      <br><br>
+      <a href="register.html">Register</a>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none';" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">Password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+};
+</script>
+<!--end of login button and screen-->
+
+<header><h1>Welcome to Embroidable!</h1></header>
+
+<hr />
+
+<nav>
+    <div class="handle">Menu
+        <div class="MenuIcon"><i class="material-icons" style="font-size: 26px">menu</i></div>
+    </div>
+        <ul>
+            <li><a href="Embroidery.html"><i class="fa fa-home"></i></a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Tributes.html">Tributes</a></li>
+            <li><a href="ContactMe.html">Contact Me</a></li>
+            <li><a href="Catalog.html">Catalog</a></li>
+            <li><a href="ShoppingChart.html">Shopping Chart</a></li>
+            <li><a href="http://www.google.com" target="_blank"><i class="fa fa-search"></i></a></li>
+        </ul>
+</nav>
+
+<p style="text-align: center">[cool photo and maybe a start shoping button]</p>
+
+<div class="container2">
+    <center><img src="../../../Pics/P6170677.JPG" alt="Flowers" style="width:100%;height:100%;"></center>
+
+    <div class="div-button-box">
+        <p class="word-button">Embroidered Perfection <br> <span>Come and see the magic...</span></p>
+        <form method="get" action="Catalog.html">
+            <button type="submit">Start Shopping</button>
+        </form>
+    </div>
+</div>
+
+<p style="text-align: center">[body Information]</p>
+
+<script>
+    $('.handle').on('click', function(){
+            $('nav ul').toggleClass('showing');
+        });
+</script>
+ 
+ <!--NavBar jquery togal menu tab-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</body>
+</html>
