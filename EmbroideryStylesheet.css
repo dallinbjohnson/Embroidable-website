@@ -26,14 +26,12 @@ button, input {
 }
 
 /*Logo*/
-.logo {
-    padding: 0;
-    margin: 0;
-}
 .logo > img {
-    float: left;
+    position: absolute;
+    left: 30px;
+    top: 60px;
     width: 15%;
-    height: 15%;
+    height: 10%;
 }
 
 /*Login button and screen*/
@@ -173,7 +171,7 @@ span.psw {
 }
 /*end of register*/
 
-/* This is css for the Navigation bar. */
+/* Navigation bar */
 nav  ul{
     position: fixed;
     top: 0;
